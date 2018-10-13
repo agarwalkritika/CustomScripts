@@ -27,6 +27,7 @@ then
 else 
 	echo "Already in stop state"
 fi
+#Below command is used to change in code on runtime if particular string exists.
 sed -i "s/x.x.x.x/${ip1_address}/g" /home/kritika/required_code/index.html
 sed -i "s/####/${host_name}/g" /home/kritika/required_code/index.html
 #awk -v "ip_address=$ip1_address" '{gsub(/x.x.x.x/,ip_address);print}' /home/kritika/required_code/index.html
